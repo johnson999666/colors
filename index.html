@@ -44,11 +44,20 @@
 			background-color: orange;
 		}
 	</style>
+	
+	<script>
+		const container = document.querySelector('.container');
+
+		container.addEventListener('click', function() {
+			this.style.width = '300px';
+			this.style.height = '300px';
+		});
+	</script>
 </head>
 <body>
 	<table>
 		<tr>
-			<td class="red">RED</td>
+			<td class="container"class="red">RED</td>
 			<td class="green">GREEN</td>
 			<td class="blue">BLUE</td>
 			<td class="yellow">YELLOW</td>
